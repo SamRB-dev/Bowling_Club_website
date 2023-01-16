@@ -29,6 +29,13 @@ a {
     font-weight: 700;
     font-style: normal;
     letter-spacing: -0.02rem;
+    transition: color 850ms ease-in,
+                text-decoration 850ms ease-in;
+}
+
+a:hover {
+    color: var(--Secondary-White);
+    text-decoration: underline;
 }
 
 .nav-bar {
@@ -83,7 +90,6 @@ main {
     line-height: 4rem;
     letter-spacing: -0.02rem;
     margin: 0% 0% 6% 0%;
-    /* width: 75%; */
 }
 
 .brief h3 {
@@ -134,24 +140,26 @@ main {
     font-size: 1.5rem;
 }
 
-#carouselExampleInterval {
-    margin: 0% 0% 10% 0%;
+#demo {
+    margin: 0% 0% 15% 0%;
 }
 
 /* (max-width: 767px) and */
 @media (max-width: 767px) and (orientation: portrait) {
     .hero-section {
         grid-template-columns: 1fr;
-        justify-content: center;
+        gap: 10%;
+        margin-bottom: 15%;
     }
 
     .brief {
-        order: 2;
+        order: 1;
     }
 
     .brief h2 {
         font-size: 1.7rem;
         line-height: 1.5;
+        margin-bottom: 5%;
     }
 
     .brief h3 {
@@ -160,7 +168,7 @@ main {
     }
 
     .image {
-        order: 1;
+        order: 2;
     }
 
     .image img {
@@ -180,5 +188,13 @@ main {
 
     .card-details {
         order: 1;
+    }
+
+    .card-details h2 {
+        font-size: 1.7rem;
+    }
+
+    .card-details h3 {
+        font-size: 1.2rem;
     }
 }
