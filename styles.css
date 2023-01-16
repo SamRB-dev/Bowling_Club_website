@@ -188,6 +188,7 @@ main {
 
     .card-details {
         order: 1;
+        margin-bottom: 10%;
     }
 
     .card-details h2 {
