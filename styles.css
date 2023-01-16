@@ -173,6 +173,7 @@ main {
 
     .image img {
         height: 25vmax;
+        margin-left: 2.5%;
     }
 
     .card {
@@ -188,7 +189,7 @@ main {
 
     .card-details {
         order: 1;
-        margin-bottom: 10%;
+        margin-bottom: 0%;
     }
 
     .card-details h2 {
