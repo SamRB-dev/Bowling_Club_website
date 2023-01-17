@@ -48,7 +48,7 @@ body {
     color: var(--Secondary-Orange);
 }
 
-.nav-item a:active {
+a:active, a:focus {
     color: var(--Secondary-White) !important;
 }
 
@@ -147,6 +147,12 @@ main {
 
 /* (max-width: 767px) and */
 @media (max-width: 767px) and (orientation: portrait) {
+    #nav {
+        margin: 0% 0% 8% 0%;
+        position: sticky;
+        top: 0;
+        background-color: var(--Primary-Color) !important;
+    }
 
     #nav-items {
         gap: 0;
