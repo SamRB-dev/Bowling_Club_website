@@ -5,7 +5,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: var(--Title);
+    font-family: var(--Title) !important;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 :root {
@@ -21,24 +25,39 @@ body {
     background-color: var(--Primary-Color) !important;
 }
 
-a {
-    text-decoration: none;
+#nav {
+    margin: 0% 0% 2% 0%;
+}
+
+#nav-items {
+    gap: 4.5rem;
+}
+
+.nav-item a {
+    text-decoration: none !important;
     color: var(--Secondary-Yellow);
     text-align: center;
     font-size: 1.05rem;
     font-weight: 700;
     font-style: normal;
     letter-spacing: -0.02rem;
-    transition: color 850ms ease-in,
-                text-decoration 850ms ease-in;
+    transition: color 850ms ease-in;
 }
 
-a:hover {
-    color: var(--Secondary-White);
-    text-decoration: underline;
+.nav-item a:hover {
+    color: var(--Secondary-Orange);
 }
 
-.nav-bar {
+.nav-item a:active {
+    color: var(--Secondary-White) !important;
+}
+
+.navbar-toggler-icon {
+    background-image: url("./assets/img/🦆\ icon\ _menu_icon.svg");
+}
+
+
+/* .nav-bar {
     display: flex;
     padding: 0% 4%;
     margin: 2% auto 4% auto;
@@ -49,9 +68,9 @@ a:hover {
     grid-template-columns: repeat(4,1fr);
     align-items: center;
     gap: 2.5rem;
-}
+} */
 
-.nav-bar .nav  a:nth-child(1), a:nth-child(3),a:nth-child(4) {
+/* .nav-bar .nav  a:nth-child(1), a:nth-child(3),a:nth-child(4) {
     padding: 4.5%;
 }
 
@@ -65,6 +84,19 @@ a:hover {
     font-weight: 700;
     font-style: normal;
     letter-spacing: 0.05rem;
+    margin: 0;
+} */
+
+#logo {
+    color: var(--Secondary-Orange);
+    font-size: 1.6rem;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: 0.05rem;
+}
+
+#navbarSupportedContent {
+    justify-content: end;
 }
 
 main {
@@ -76,7 +108,7 @@ main {
     grid-template-columns: 3fr 1fr;
     align-items: center;
     justify-content: space-between;
-    margin: 0% 0% 8% 0%;
+    margin: 0% 0% 5% 0%;
 }
 
 .brief {
@@ -146,6 +178,11 @@ main {
 
 /* (max-width: 767px) and */
 @media (max-width: 767px) and (orientation: portrait) {
+
+    #nav-items {
+        gap: 0;
+    }
+
     .hero-section {
         grid-template-columns: 1fr;
         gap: 10%;
@@ -172,8 +209,9 @@ main {
     }
 
     .image img {
-        height: 25vmax;
-        margin-left: 2.5%;
+        height: 35vmax;
+        /* margin-left: 2.5%; */
+        width: 100%;
     }
 
     .card {
