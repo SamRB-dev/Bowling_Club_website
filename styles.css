@@ -56,37 +56,6 @@ body {
     background-image: url("./assets/img/🦆\ icon\ _menu_icon.svg");
 }
 
-
-/* .nav-bar {
-    display: flex;
-    padding: 0% 4%;
-    margin: 2% auto 4% auto;
-}
-
-.nav-bar .nav {
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    align-items: center;
-    gap: 2.5rem;
-} */
-
-/* .nav-bar .nav  a:nth-child(1), a:nth-child(3),a:nth-child(4) {
-    padding: 4.5%;
-}
-
-.nav-bar .logo {
-    width: 60%;
-}
-
-.nav-bar .logo h2 {
-    color: var(--Secondary-Orange);
-    font-size: 1.6rem;
-    font-weight: 700;
-    font-style: normal;
-    letter-spacing: 0.05rem;
-    margin: 0;
-} */
-
 #logo {
     color: var(--Secondary-Orange);
     font-size: 1.6rem;
