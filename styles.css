@@ -145,6 +145,24 @@ main {
     margin: 0% 0% 15% 0%;
 }
 
+.address {
+    display: flex;
+}
+
+.address-title {
+    color: var(--Secondary-Yellow);
+    transform: skew(20deg);
+    background-color: var(--Secondary-Orange);
+    padding: 2% 6%;
+    width: 30%;
+}
+
+.address-title h2 {
+    margin-bottom: 0;
+    font-weight: 700;
+    text-align: center;
+}
+
 /* (max-width: 767px) and */
 @media (max-width: 767px) and (orientation: portrait) {
     #nav {
