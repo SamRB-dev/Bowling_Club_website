@@ -142,25 +142,45 @@ main {
 }
 
 #demo {
-    margin: 0% 0% 15% 0%;
+    margin: 0% 0% 14% 0%;
 }
 
 .address {
     display: flex;
+    margin: 0 0 5% 0;
+    gap: 30%;
 }
 
 .address-title {
     color: var(--Secondary-Yellow);
     transform: skew(20deg);
-    background-color: var(--Secondary-Orange);
-    padding: 2% 6%;
-    width: 30%;
+    align-self: center;
+    width: 25%;
+}
+
+.address-title h2 img {
+    max-width: 25%;
 }
 
 .address-title h2 {
     margin-bottom: 0;
     font-weight: 700;
     text-align: center;
+    background-color: var(--Secondary-Orange);
+    padding: 8%;
+}
+
+.address-main {
+    background-color: var(--Secondary-Orange);
+    border-radius: 0 90px;
+}
+
+.address-main h2 {
+    font-weight: 400;
+    font-style: normal;
+    color: var(--Secondary-White);
+    letter-spacing: -0.02rem;
+    padding: 18%;
 }
 
 /* (max-width: 767px) and */
@@ -229,5 +249,14 @@ main {
 
     .card-details h3 {
         font-size: 1.2rem;
+    }
+
+    .address {
+        flex-direction: column;
+        gap: 2.5rem;
+    }
+
+    .address-title {
+        width: 40%;
     }
 }
