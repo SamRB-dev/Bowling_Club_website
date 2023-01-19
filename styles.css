@@ -142,27 +142,27 @@ main {
 }
 
 #demo {
-    margin: 0% 0% 14% 0%;
+    margin: 0% 0% 10% 0%;
 }
 
 .address {
     display: flex;
-    margin: 0 0 5% 0;
+    margin: 0 0 10% 0;
     gap: 30%;
 }
 
-.address-title {
+.address-title , .oh-title {
     color: var(--Secondary-Yellow);
     transform: skew(20deg);
     align-self: center;
     width: 25%;
 }
 
-.address-title h2 img {
+.address-title h2 img, .oh-title h2 img{
     max-width: 25%;
 }
 
-.address-title h2 {
+.address-title h2, .oh-title h2 {
     margin-bottom: 0;
     font-weight: 700;
     text-align: center;
@@ -170,9 +170,10 @@ main {
     padding: 8%;
 }
 
-.address-main {
+.address-main , .hours {
     background-color: var(--Secondary-Orange);
     border-radius: 0 90px;
+    box-shadow: 0px 6px 4px var(--Secondary-Yellow);
 }
 
 .address-main h2 {
@@ -181,6 +182,28 @@ main {
     color: var(--Secondary-White);
     letter-spacing: -0.02rem;
     padding: 18%;
+    text-align: center;
+}
+
+.opening-hours {
+    display: flex;
+    margin-bottom: 10%;
+    gap: 30%;
+}
+
+.oh-title {
+    width: 42%;
+}
+
+.hours {
+    width: 65%;
+}
+
+.hours p {
+    font-size: 1.5rem;
+    padding: 13% 18%;
+    font-weight: 450;
+    color: var(--Secondary-White);
 }
 
 /* (max-width: 767px) and */
@@ -251,12 +274,37 @@ main {
         font-size: 1.2rem;
     }
 
-    .address {
+    #demo {
+        margin: 0% 0% 20% 0%;
+    }
+
+    .address, .opening-hours {
         flex-direction: column;
         gap: 2.5rem;
+        margin-bottom: 20%;
+    }
+
+    .opening-hours {
+        flex-direction: column-reverse;
     }
 
     .address-title {
         width: 40%;
+    }
+
+    .address-main, .hours {
+        border-radius: 0 60px;
+    }
+
+    .hours {
+        width: 100%;
+    }
+
+    .hours p {
+        font-size: 1.1rem;
+    }
+
+    .oh-title {
+        width: 70%;
     }
 }
