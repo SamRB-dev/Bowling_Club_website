@@ -200,8 +200,8 @@ main {
 }
 
 .hours p {
-    font-size: 1.5rem;
-    padding: 13% 18%;
+    font-size: 2rem;
+    padding: 13% 8%;
     font-weight: 450;
     color: var(--Secondary-White);
 }
@@ -301,7 +301,7 @@ main {
     }
 
     .hours p {
-        font-size: 1.1rem;
+        font-size: 1.4rem;
     }
 
     .oh-title {
