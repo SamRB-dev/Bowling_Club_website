@@ -289,7 +289,7 @@ main {
     }
 
     .address-title {
-        width: 40%;
+        width: 50%;
     }
 
     .address-main, .hours {
@@ -301,10 +301,10 @@ main {
     }
 
     .hours p {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
     }
 
     .oh-title {
-        width: 70%;
+        width: 80%;
     }
 }
