@@ -151,23 +151,23 @@ main {
     gap: 30%;
 }
 
-.address-title , .oh-title {
+.address-title , .oh-title, .events-title {
     color: var(--Secondary-Yellow);
     transform: skew(20deg);
     align-self: center;
     width: 25%;
 }
 
-.address-title h2 img, .oh-title h2 img{
+.address-title h2 img, .oh-title h2 img, .events-title h2 img {
     max-width: 25%;
 }
 
-.address-title h2, .oh-title h2 {
+.address-title h2, .oh-title h2, .events-title h2 {
     margin-bottom: 0;
     font-weight: 700;
     text-align: center;
     background-color: var(--Secondary-Orange);
-    padding: 8%;
+    padding: 4% 8%;
 }
 
 .address-main , .hours {
@@ -204,6 +204,51 @@ main {
     padding: 13% 8%;
     font-weight: 450;
     color: var(--Secondary-White);
+}
+
+.events {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10%;
+}
+
+.events-title {
+    margin: 0 0 5% 0;
+}
+
+.event-details {
+    display: flex;
+    gap: 2.5%;
+    overflow: hidden;
+}
+
+.event-card {
+    width: 27%;
+    margin-bottom: 5%;
+}
+
+.event-card img {
+    max-width: 100%;
+    border-radius: 10% 10% 0 0; 
+}
+
+.event-card-details {
+    text-align: center;
+    background-color: var(--Secondary-Orange);
+    padding: 4% 6%;
+    border-radius: 0 0 2.1rem 2.1rem;
+    box-shadow: 0px 7px 4px var(--Secondary-Yellow);
+}
+
+.event-card-details h2 {
+    color: var(--Secondary-Yellow);
+    font-weight: 600;
+    font-style: italic;
+}
+
+.event-card-details h4,h5 {
+    color: var(--Secondary-White);
+    font-style: italic;
 }
 
 /* (max-width: 767px) and */
@@ -306,5 +351,18 @@ main {
 
     .oh-title {
         width: 80%;
+    }
+
+    .events-title {
+        width: 50%;
+    }
+    
+    .event-details {
+        flex-direction: column;
+    }
+
+    .event-card {
+        width: 100%;
+        margin-bottom: 10%;
     }
 }
