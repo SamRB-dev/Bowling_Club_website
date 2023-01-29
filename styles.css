@@ -151,7 +151,7 @@ main {
     gap: 30%;
 }
 
-.address-title , .oh-title, .events-title {
+.address-title , .oh-title, .events-title, .sponsors-title {
     color: var(--Secondary-Yellow);
     transform: skew(20deg);
     align-self: center;
@@ -162,7 +162,7 @@ main {
     max-width: 25%;
 }
 
-.address-title h2, .oh-title h2, .events-title h2 {
+.address-title h2, .oh-title h2, .events-title h2, .sponsors-title h2 {
     margin-bottom: 0;
     font-weight: 700;
     text-align: center;
@@ -206,7 +206,7 @@ main {
     color: var(--Secondary-White);
 }
 
-.events {
+.events , .sponsors {
     display: flex;
     flex-direction: column;
     margin-bottom: 10%;
@@ -249,6 +249,24 @@ main {
 .event-card-details h4,h5 {
     color: var(--Secondary-White);
     font-style: italic;
+}
+
+.sponsors-icons {
+    display: flex;
+    gap: 5%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.icon {
+    width: auto;
+}
+
+.icon img {
+    width: 68%;
+    display: block;
+    margin: auto;
 }
 
 /* (max-width: 767px) and */
@@ -353,7 +371,7 @@ main {
         width: 80%;
     }
 
-    .events-title {
+    .events-title, .sponsors-title {
         width: 50%;
     }
     
@@ -364,5 +382,13 @@ main {
     .event-card {
         width: 100%;
         margin-bottom: 10%;
+    }
+
+    .icon {
+        width: 30%;
+    }
+
+    .icon img {
+        width: 100%;
     }
 }
