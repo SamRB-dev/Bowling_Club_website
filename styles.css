@@ -456,7 +456,7 @@ footer {
   }
 
   .contact-info, .quicklinks {
-    margin-bottom: 10%;
+    margin-bottom: 5%;
   }
 
   .contact-info #logo {
@@ -477,11 +477,12 @@ footer {
 
   .socials {
     border: 0;
-    border: 3px solid #ffffff;;
+    border-bottom: 3px solid #ffffff;;
     padding: 2% 5%;
     align-self: center;
     flex-direction: row;
     gap: 2rem;
+    margin-bottom: 2%;
   }
 
   .socials a img {
