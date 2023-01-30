@@ -482,7 +482,7 @@ footer {
     align-self: center;
     flex-direction: row;
     gap: 2rem;
-    margin-bottom: 2%;
+    margin-bottom: 5%;
   }
 
   .socials a img {
